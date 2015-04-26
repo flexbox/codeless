@@ -1,0 +1,18 @@
+doctype html
+
+html lang="#{data.settings.site.i18n}"
+  head
+    meta charset="utf-8"
+
+    title #{data.settings.site.title} • #{current_page.data.title}
+    link rel="shortcut icon" href="#{image_path('favicon.ico')}" type="image/x-icon"
+
+    = stylesheet_link_tag 'application'
+
+  body class='#{page_classes}'
+
+    == yield
+
+    = javascript_include_tag 'application'
+    = yield_content :javascripts
+    = google_analytics_universal_tag

@@ -1,0 +1,6 @@
+site:
+  title: codeless
+  i18n: en
+  url: 'https://github.com/flexbox/codeless'
+  author: David Leuliette
+  description: 'Write less code, solve more problems'
