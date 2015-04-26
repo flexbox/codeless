@@ -3,10 +3,12 @@ doctype html
 html lang="#{data.settings.site.i18n}"
   head
     meta charset="utf-8"
+    meta name="viewport" content="width=device-width,initial-scale=1"
 
     title #{data.settings.site.title} • #{current_page.data.title}
-    link rel="shortcut icon" href="#{image_path('favicon.ico')}" type="image/x-icon"
+    meta name="description" content="#{current_page.data.description}"
 
+    = partial 'views/global/favicon'
     = stylesheet_link_tag 'application'
 
   body class='#{page_classes}'
