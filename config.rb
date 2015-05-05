@@ -1,7 +1,6 @@
 require 'slim'
 
-activate :autoprefixer,
-  browsers: ['last 2 versions', 'ie 8', 'ie 9']
+activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
 activate :livereload
 activate :directory_indexes
@@ -47,14 +46,19 @@ configure :build do
     }
   end
 
-  activate :sitemap, hostname: data.settings.site.url
-
-  activate :minify_html
+  activate :minify_html, remove_input_attributes: false
   activate :minify_css
   activate :minify_javascript
   activate :gzip
-
   activate :asset_hash
+
+  activate :sitemap, hostname: data.settings.site.url
+
+  activate :robots,
+    rules: [{:user_agent => '*', :allow => %w(/)}],
+    sitemap: data.settings.site.url+'sitemap.xml'
+
+  # Use this for gh-pages
   # activate :relative_assets
   # set :relative_links, true
 

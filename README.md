@@ -9,9 +9,10 @@ Static site starter template for [Middleman](http://middlemanapp.com) based on [
 
 ###### Tools
 - [Bower](http://bower.io) *[js package management]*
-- [Middleman Live Reload](https://github.com/middleman/middleman-livereload) *[Reloads the page when files change]*
-- [Middleman Autoprefixer](https://github.com/middleman/middleman-autoprefixer) *[Automatically add vendor prefixes to CSS rules]*
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
+- [Middleman Autoprefixer](https://github.com/middleman/middleman-autoprefixer) *[Automatically add vendor prefixes to CSS rules]*
+- [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
+- [Middleman Live Reload](https://github.com/middleman/middleman-livereload) *[Reloads the page when files change]*
 
 
 ## Getting Started
