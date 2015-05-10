@@ -1,3 +1,19 @@
 @charset "UTF-8";
 
-@import "components/typography";
+// This code can be dropped
+// If you are looking for a great stylesheet architecture
+// https://github.com/flexbox/foundation-boilerplate/blob/master/source/assets/stylesheets/application.scss
+
+body {
+  background-color: #F1F1F1;
+}
+
+.index {
+  display: flex;
+  height: 100vh;
+}
+
+.text-center {
+  margin: auto;
+  text-align: center;
+}
