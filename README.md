@@ -4,7 +4,7 @@ Static site starter template for [Middleman](http://middlemanapp.com) based on [
 
 ###### Preprocessing
 - [Slim](http://slim-lang.com) *[for html]*
-- [SASS](http://sass-lang.com) *[for css]*
+- [Sass](http://sass-lang.com) *[for css]*
 - [CoffeeScript](http://coffeescript.org) *[for js]*
 
 ###### Tools
@@ -30,27 +30,39 @@ Install codeless template
 Start your project
 
     cd ~/path/to/your/project
-    middleman init PROJECT_NAME --template=codeless
+    middleman init awesome-project --template=codeless
 
-## Bower
+### Bower
 
 Find and install the packages you need…
 
-    bower search PACKAGE_NAME
-    bower install ACTUAL_PACKAGE_NAME -S
+    bower search package-name
+    bower install package-name -S
 
-Include the assets in your js/css files (paths relative to the root 'bower' directory )
+Include the assets in your js/css files (paths relative to the root `bower_component` directory )
 
-`#=require 'folder/file'` - *for js files*
+###### css files
 
-`@import 'folder/file'` - *for css files*
+    @import 'folder/file'`
 
-## Architecture
+###### js files
+
+    #=require 'folder/file
+
+
+### Architecture
 
 Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` directory.
 Vendor stylesheets and JavaScripts should go in each of their `/bower_components/` directories.
 
-## Deploying to GitHub Pages
+    codeless/
+    ├── bower_components/
+    │    └── ...
+    ├── source/
+    │   ├── assets/
+    │   └── ...
+
+### Deploying to GitHub Pages
 
     rake publish
 
