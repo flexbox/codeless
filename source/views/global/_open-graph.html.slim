@@ -1,0 +1,16 @@
+/ Facebook open graph
+meta property="og:title" content="#{current_page.data.title}"
+meta property="og:site_name" content="#{data.settings.site.title}"
+meta property="og:url" content="#{data.settings.site.url}"
+meta property="og:description" content="#{current_page.data.description}"
+meta property="og:type" content="article"
+
+/ Twitter card
+meta name="twitter:card" content="summary"
+meta name="twitter:site" content="#{data.settings.social.twitter}"
+meta name="twitter:title" content="#{current_page.data.title}"
+meta name="twitter:description" content="#{current_page.data.description}"
+- if current_page.data.twitter_img
+  meta name="twitter:image:src" content="#{current_page.data.twitter_img}"
+- else
+  meta name="twitter:image:src" content="#{data.settings.site.url}"

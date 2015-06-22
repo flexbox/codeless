@@ -1,6 +1,9 @@
 site:
   title: codeless
-  description: Write less code, solve more problems
+  description: 'Write less code, solve more problems'
   i18n: en
   url: 'https://github.com/flexbox/codeless'
+  img: 'https://raw.githubusercontent.com/flexbox/codeless/master/source/favicon_base.png'
   author: David Leuliette
+social:
+  twitter: '@_flexbox'

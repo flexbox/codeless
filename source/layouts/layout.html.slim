@@ -7,6 +7,9 @@ html lang="#{data.settings.site.i18n}"
 
     title #{data.settings.site.title} • #{current_page.data.title}
     meta name="description" content="#{current_page.data.description}"
+    meta name="author" content="#{data.settings.site.author}"
+    meta name="robots" content="index, follow"
+    = partial 'views/global/open-graph'
 
     = partial 'views/global/favicon'
     = stylesheet_link_tag 'application'
