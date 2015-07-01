@@ -64,10 +64,8 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
 
 ### Deploying to GitHub Pages
 
-    rake publish
-
-Thanks to [neo](https://github.com/neo/middleman-gh-pages) for the deployment method. More information available there.
-
+    middleman build
+    middleman publish
 
 ## Contributing
 
