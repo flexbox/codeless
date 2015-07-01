@@ -4,21 +4,24 @@ activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
 activate :directory_indexes
 
-set :js_dir, 'assets/javascripts'
-set :css_dir, 'assets/stylesheets'
+set :js_dir,     'assets/javascripts'
+set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
+
+activate :deploy do |deploy|
+  deploy.method       = :git
+  deploy.branch       = 'gh-pages'
+  deploy.build_before = true # always use --no-clean options
+end
 
 # Add bower's directory to sprockets asset path
 after_configuration do
-
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
-
 end
 
 # Build-specific configuration
 configure :build do
-
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source')
     f.output_dir    = File.join(root, 'build')
@@ -52,5 +55,4 @@ configure :build do
   # Use this for gh-pages
   # activate :relative_assets
   # set :relative_links, true
-
 end
