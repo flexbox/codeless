@@ -47,6 +47,9 @@ configure :build do
   activate :asset_hash
 
   activate :sitemap, hostname: data.settings.site.url
+  activate :sitemap_ping do |config|
+    config.host = "#{data.settings.site.url}"
+  end
 
   activate :robots,
     rules: [{:user_agent => '*', :allow => %w(/)}],
