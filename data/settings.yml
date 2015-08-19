@@ -1,9 +1,15 @@
 site:
   title: codeless
+  title_separator: •
   description: 'Write less code, solve more problems'
   i18n: en
+  geo:
+    placename: 'Lille, Nord'
+    position: 50.629250;3.057256
+    region: FR-59
   url: 'https://github.com/flexbox/codeless'
-  img: 'https://raw.githubusercontent.com/flexbox/codeless/master/source/favicon_base.png'
+  logo: 'https://raw.githubusercontent.com/flexbox/codeless/master/source/favicon_base.png'
   author: David Leuliette
+
 social:
   twitter: '@_flexbox'

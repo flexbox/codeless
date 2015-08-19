@@ -1,0 +1,40 @@
+meta charset="utf-8"
+meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+meta name="viewport"              content="width=device-width, initial-scale=1.0"
+
+/ SEO
+title
+  = meta_tag_title
+meta name="description"           content=meta_tag_description
+meta name="author"                content="#{data.settings.site.author}"
+meta name="robots"                content="index, follow"
+
+/ Geocoding
+meta name="geo.placename"         content="#{data.settings.site.geo.placename}"
+meta name="geo.position"          content="#{data.settings.site.geo.position}"
+meta name="geo.region"            content="#{data.settings.site.geo.region}"
+
+/ Microdata
+meta itemprop="name"              content=meta_tag_title
+meta itemprop="description"       content=meta_tag_description
+meta itemprop="image"             content=meta_tag_image
+
+/ Facebook Open Graph
+meta property="og:site_name"      content="#{data.settings.site.title}"
+meta property="og:title"          content=meta_tag_title
+meta property="og:description"    content=meta_tag_description
+meta property="og:image"          content=meta_tag_image
+meta property="og:type"           content="website"
+meta property="og:url"            content=meta_tag_url
+
+/ Google+
+meta itemprop="name"              content=meta_tag_title
+meta itemprop="description"       content=meta_tag_description
+meta itemprop="image"             content=meta_tag_image
+
+/ Twitter Card
+meta name="twitter:card"          content="summary_large_image"
+meta name="twitter:site"          content="#{data.settings.social.twitter}"
+meta name="twitter:title"         content=meta_tag_title
+meta name="twitter:description"   content=meta_tag_description
+meta name="twitter:image"         content=meta_tag_image

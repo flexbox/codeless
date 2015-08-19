@@ -2,18 +2,10 @@ doctype html
 
 html lang="#{data.settings.site.i18n}"
   head
-    meta charset="utf-8"
-    meta http-equiv="X-UA-Compatible" content="IE=Edge"
-    meta name="viewport" content="width=device-width,initial-scale=1"
-
-    title #{data.settings.site.title} • #{current_page.data.title}
-    meta name="description" content="#{current_page.data.description}"
-    meta name="author" content="#{data.settings.site.author}"
-    meta name="robots" content="index, follow"
-    = partial 'views/global/open-graph'
-
-    = partial 'views/global/favicon'
+    = partial 'views/commons/meta_tags'
+    = partial 'views/commons/favicon'
     = stylesheet_link_tag 'application'
+    = yield_content :head
 
   body class="#{page_classes}"
 
