@@ -19,35 +19,35 @@ Static site starter template for [Middleman](http://middlemanapp.com) based on [
 
 Install Middleman
 
-    gem install middleman
+    $ gem install middleman
 
 Install codeless template
 
-    mkdir ~/.middleman #if it doesn't exist yet
-    cd ~/.middleman
-    git clone git@github.com:flexbox/codeless.git codeless
+    $ mkdir ~/.middleman #if it doesn't exist yet
+    $ cd ~/.middleman
+    $ git clone git@github.com:flexbox/codeless.git codeless
 
 Start your project
 
-    cd ~/path/to/your/project
-    middleman init awesome-project --template=codeless
+    $ cd ~/path/to/your/project
+    $ middleman init awesome-project --template=codeless
 
 ### Bower
 
 Find and install the packages you need…
 
-    bower search package-name
-    bower install package-name -S
+    $ bower search package-name
+    $ bower install package-name -S
 
 Include the assets in your js/css files (paths relative to the root `bower_component` directory )
 
 ###### css files
 
-    @import 'folder/file'`
+    @import 'folder/file'
 
 ###### js files
 
-    #=require 'folder/file
+    #=require 'folder/file'
 
 
 ### Architecture
