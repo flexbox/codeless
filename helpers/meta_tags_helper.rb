@@ -39,7 +39,7 @@ module MetaTagsHelper
       title = page_title
     end
 
-    if title.nil? || title.empty?
+    if title.blank?
       puts "== path:#{current_page.url} title is missing on settings.yml"
     elsif title.length > 55
       puts "== path:#{current_page.url} title should be under 55 characters. You have: #{title.length}"
