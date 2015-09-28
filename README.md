@@ -31,6 +31,20 @@ Start your project
 
     $ cd ~/path/to/your/project
     $ middleman init awesome-project --template=codeless
+    
+### Dependencies
+
+You need [Bundler](http://bundler.io/) to install gems
+
+    $ gem install bundler
+
+Then, install them
+
+    $ bundle install
+
+If the project already contains Bower dependencies, run
+
+    $ bower install
 
 ### Bower
 
@@ -61,6 +75,10 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
     ├── source/
     │   ├── assets/
     │   └── ...
+    
+### Brower preview
+
+    middleman server
 
 ### Deploying to GitHub Pages
 
