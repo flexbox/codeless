@@ -76,7 +76,7 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
     │   ├── assets/
     │   └── ...
     
-### Brower preview
+### Browser preview
 
     middleman server
 
