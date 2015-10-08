@@ -14,7 +14,6 @@ Static site starter template for [Middleman](http://middlemanapp.com) based on [
 - [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
 - [Middleman Live Reload](https://github.com/middleman/middleman-livereload) *[Reloads the page when files change]*
 
-
 ## Getting Started
 
 Install Middleman
@@ -42,10 +41,6 @@ Then, install them
 
     $ bundle install
 
-If the project already contains Bower dependencies, run
-
-    $ bower install
-
 ### Bower
 
 Find and install the packages you need…
@@ -53,16 +48,7 @@ Find and install the packages you need…
     $ bower search package-name
     $ bower install package-name -S
 
-Include the assets in your js/css files (paths relative to the root `bower_component` directory )
-
-###### css files
-
-    @import 'folder/file'
-
-###### js files
-
-    #=require 'folder/file'
-
+Include the assets in your `js`/`css` files (paths relative to the root `bower_component` directory )
 
 ### Architecture
 
@@ -76,6 +62,14 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
     │   ├── assets/
     │   └── ...
     
+###### css files
+
+    @import 'folder/file'
+
+###### js files
+
+    #=require 'folder/file'
+
 ### Browser preview
 
     middleman server
