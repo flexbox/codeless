@@ -31,6 +31,11 @@ Start your project
     $ cd ~/path/to/your/project
     $ middleman init awesome-project --template=codeless
     
+If you use __Middleman 4__, they removed the ability to create custom reusable templates from either `~/.middleman` or gems.
+Then you'll have to use the command below
+
+    $ middleman init -T flexbox/codeless awesome-project
+    
 ### Dependencies
 
 You need [Bundler](http://bundler.io/) to install gems
