@@ -1,6 +1,10 @@
 # codeless
 
-Static site starter template for [Middleman](http://middlemanapp.com) based on [slimmer](https://github.com/polymatt/slimmer) with Ruby on Rails architecture.
+Static site starter template for [Middleman](http://middlemanapp.com) with Ruby on Rails architecture.
+
+[![Build Status](https://travis-ci.org/flexbox/codeless.svg?branch=master)](https://travis-ci.org/flexbox/codeless)
+
+[![Coverage Status](https://coveralls.io/repos/github/flexbox/codeless/badge.svg?branch=master)](https://coveralls.io/github/flexbox/codeless?branch=master)
 
 ###### Preprocessing
 - [Slim](http://slim-lang.com) *[for html]*
@@ -22,7 +26,7 @@ Install Middleman
 
 Install codeless template
 
-    $ mkdir ~/.middleman #if it doesn't exist yet
+    $ mkdir ~/.middleman # if it doesn’t exist yet
     $ cd ~/.middleman
     $ git clone git@github.com:flexbox/codeless.git codeless
 
@@ -91,12 +95,6 @@ Note :
   activate :relative_assets
   set :relative_links, true
 ```
-
-## Contributing
-
-If you have problems, please create a [GitHub Issue](https://github.com/flexbox/codeless/issues).
-
-Have a fix or want to add a feature? [Pull Requests](https://github.com/flexbox/codeless/pulls) are welcome!
 
 ## Author
 

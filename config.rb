@@ -1,4 +1,3 @@
-require 'better_errors'
 require 'slim'
 
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
@@ -8,11 +7,6 @@ activate :directory_indexes
 set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
-
-configure :development do
-  use BetterErrors::Middleware
-  BetterErrors.application_root = __dir__
-end
 
 activate :deploy do |deploy|
   deploy.method       = :git
