@@ -1,10 +1,20 @@
-# codeless
+<img src="https://raw.githubusercontent.com/flexbox/codeless/master/source/assets/images/codeless-middleman.jpg" alt="Middleman advanced template" align="center" />
+<br />
 
-Static site starter template for [Middleman](http://middlemanapp.com) with Ruby on Rails architecture.
+<div align="center"><strong>Start your next Middleman project in seconds</strong></div>
+<div align="center">A highly scalable, rails ready foundation with the best DX and a focus on SEO & best practices.</div>
+<br />
+<div align="center">
 
-[![Build Status](https://travis-ci.org/flexbox/codeless.svg?branch=master)](https://travis-ci.org/flexbox/codeless)
+<a href="https://travis-ci.org/flexbox/codeless">
+  <img src="https://travis-ci.org/flexbox/codeless.svg?branch=master" alt="Build Status">
+</a>
+<a href="https://coveralls.io/github/flexbox/codeless?branch=master">
+  <img src="https://coveralls.io/repos/github/flexbox/codeless/badge.svg?branch=master" alt="Coverage Status">
+</a>
 
-[![Coverage Status](https://coveralls.io/repos/github/flexbox/codeless/badge.svg?branch=master)](https://coveralls.io/github/flexbox/codeless?branch=master)
+</div>
+<br />
 
 ###### Preprocessing
 - [Slim](http://slim-lang.com) *[for html]*
