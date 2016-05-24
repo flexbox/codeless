@@ -8,12 +8,6 @@ set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
 
-activate :deploy do |deploy|
-  deploy.method       = :git
-  deploy.branch       = 'gh-pages'
-  deploy.build_before = true # always use --no-clean options
-end
-
 # Add bower's directory to sprockets asset path
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
@@ -58,4 +52,20 @@ configure :build do
   # Use this for github.io gh-pages
   # activate :relative_assets
   # set :relative_links, true
+end
+
+# Push-it to the web
+activate :deploy do |deploy|
+  deploy.method       = :git
+  deploy.branch       = 'gh-pages'
+  deploy.build_before = true # always use --no-clean options
+
+  committer_app = "#{Middleman::Deploy::PACKAGE} v#{Middleman::Deploy::VERSION}"
+  commit_message = "Deployed using #{committer_app}"
+
+  if ENV["TRAVIS_BUILD_NUMBER"] then
+    commit_message += " (Travis Build \##{ENV["TRAVIS_BUILD_NUMBER"]})"
+  end
+
+  deploy.commit_message = commit_message
 end
