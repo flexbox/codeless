@@ -11,8 +11,8 @@ module MetaTagsHelper
 
     if description.nil? || description.empty?
       puts "== path:#{current_page.url} meta description is missing on settings.yml"
-    elsif description.length > 160
-      puts "== path:#{current_page.url} meta description should be between 150-160 characters. You have: #{description.length}"
+    elsif description.length > 150
+      puts "== path:#{current_page.url} meta description should be between 140-150 characters. You have: #{description.length}"
     else
       description
     end
@@ -41,8 +41,8 @@ module MetaTagsHelper
 
     if title.blank?
       puts "== path:#{current_page.url} title is missing on settings.yml"
-    elsif title.length > 55
-      puts "== path:#{current_page.url} title should be under 55 characters. You have: #{title.length}"
+    elsif title.length > 70
+      puts "== path:#{current_page.url} title should be under 70 characters. You have: #{title.length}"
     else
       title += ' ' + separator + ' '
       title += site_title
