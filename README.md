@@ -45,10 +45,7 @@ Start your project
     $ cd ~/path/to/your/project
     $ middleman init awesome-project --template=codeless
     
-If you use __Middleman 4__, they removed the ability to create custom reusable templates from either `~/.middleman` or gems.
-Then you'll have to use the command below
-
-    $ middleman init -T flexbox/codeless awesome-project
+:warning: This project is not __Middleman 4 ready__, due to nightmare dependency with `middleman-deploy`.
     
 ### Dependencies
 
@@ -67,7 +64,7 @@ Find and install the packages you need…
     $ bower search package-name
     $ bower install package-name -S
 
-Include the assets in your `js`/`css` files (paths relative to the root `bower_component` directory )
+Include the assets in your `js`/`css` files (paths relative to the root `bower_component` directory)
 
 ### Architecture
 
@@ -80,14 +77,6 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
     ├── source/
     │   ├── assets/
     │   └── ...
-    
-###### css files
-
-    @import 'folder/file'
-
-###### js files
-
-    #=require 'folder/file'
 
 ### Browser preview
 
@@ -101,10 +90,9 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
 Note :
 - If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed `brew install imagemagick`
 - If you deploy on Github pages, don't forget to uncomment these two lines in `config.rb` :
-```
-  activate :relative_assets
-  set :relative_links, true
-```
+
+    activate :relative_assets
+    set :relative_links, true
 
 ## Author
 
