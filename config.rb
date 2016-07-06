@@ -8,6 +8,10 @@ set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
 
+page '/*.xml',  layout: false
+page '/*.json', layout: false
+page '/*.txt',  layout: false
+
 # Add bower's directory to sprockets asset path
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))

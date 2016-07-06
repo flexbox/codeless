@@ -34,16 +34,10 @@ Install Middleman
 
     $ gem install middleman
 
-Install codeless template
-
-    $ mkdir ~/.middleman # if it doesn’t exist yet
-    $ cd ~/.middleman
-    $ git clone git@github.com:flexbox/codeless.git codeless
-
 Start your project
 
     $ cd ~/path/to/your/project
-    $ middleman init awesome-project --template=codeless
+    $ middleman init awesome-project --template=flexbox/codeless
     
 :warning: This project is not __Middleman 4 ready__, due to nightmare dependency with `middleman-deploy`.
     
