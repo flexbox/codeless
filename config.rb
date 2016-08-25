@@ -4,6 +4,10 @@ activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
 activate :directory_indexes
 
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
+
 set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
@@ -56,20 +60,4 @@ configure :build do
   # Use this for github.io gh-pages
   # activate :relative_assets
   # set :relative_links, true
-end
-
-# Push-it to the web
-activate :deploy do |deploy|
-  deploy.method       = :git
-  deploy.branch       = 'gh-pages'
-  deploy.build_before = true # always use --no-clean options
-
-  committer_app = "#{Middleman::Deploy::PACKAGE} v#{Middleman::Deploy::VERSION}"
-  commit_message = "Deployed using #{committer_app}"
-
-  if ENV["TRAVIS_BUILD_NUMBER"] then
-    commit_message += " (Travis Build \##{ENV["TRAVIS_BUILD_NUMBER"]})"
-  end
-
-  deploy.commit_message = commit_message
 end
