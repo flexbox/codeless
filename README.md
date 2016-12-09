@@ -9,10 +9,6 @@
 <a href="https://travis-ci.org/flexbox/codeless">
   <img src="https://travis-ci.org/flexbox/codeless.svg?branch=master" alt="Build Status">
 </a>
-<a href="https://coveralls.io/github/flexbox/codeless?branch=master">
-  <img src="https://coveralls.io/repos/github/flexbox/codeless/badge.svg?branch=master" alt="Coverage Status">
-</a>
-
 </div>
 <br />
 

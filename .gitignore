@@ -17,6 +17,3 @@
 /bower_components
 
 Gemfile.lock
-
-.coveralls.yml
-coverage
