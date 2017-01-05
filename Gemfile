@@ -13,3 +13,4 @@ gem 'middleman-sitemap',       '~> 0.0.13'
 gem 'middleman-sitemap-ping',  '~> 0.0.2'
 
 gem 'slim',                    '~> 3.0.2'
+gem 'oga',                     '~> 2.8'
