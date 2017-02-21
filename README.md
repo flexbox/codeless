@@ -9,7 +9,7 @@ Static site starter template for [Middleman](http://middlemanapp.com) based on [
 
 ###### Tools
 - [Yarn](https://yarnpkg.com) *[package management]*
-- ~~[Bower](http://bower.io) *[package management]*~
+- ~~[Bower](http://bower.io) *[package management]*~~
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
 - [Middleman Autoprefixer](https://github.com/middleman/middleman-autoprefixer) *[Automatically add vendor prefixes to CSS rules]*
 - [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
@@ -48,11 +48,11 @@ Then, install them
 
     $ bundle install
 
-If the project already contains Yarn dependencies, run
+If the project already contains [Yarn](https://yarnpkg.com) dependencies, run
 
     $ yarn
 
-### Bower
+### Yarn
 
 Find and install the packages you need…
 
