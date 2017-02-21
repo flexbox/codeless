@@ -11,6 +11,6 @@ gem 'middleman-minify-html',   '~> 3.4.1'
 gem 'middleman-robots',        '~> 1.1.0'
 gem 'middleman-sitemap',       '~> 0.0.13'
 gem 'middleman-sitemap-ping',  '~> 0.0.2'
-gem 'better_errors', '~> 2.1.1'
 
-gem 'slim',    '~> 3.0.2'
+gem 'slim',                    '~> 3.0.2'
+gem 'oga',                     '~> 2.8'
