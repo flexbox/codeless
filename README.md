@@ -18,7 +18,8 @@
 - [CoffeeScript](http://coffeescript.org) *[for js]*
 
 ###### Tools
-- [Bower](http://bower.io) *[js package management]*
+- [Yarn](https://yarnpkg.com) *[package management]*
+- ~~[Bower](http://bower.io) *[package management]*~~
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
 - [Middleman Autoprefixer](https://github.com/middleman/middleman-autoprefixer) *[Automatically add vendor prefixes to CSS rules]*
 - [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
@@ -47,14 +48,25 @@ Then, install them
 
     $ bundle install
 
-### Bower
+### Yarn
 
 Find and install the packages you need…
 
-    $ bower search package-name
-    $ bower install package-name -S
+    $ yarn search package-name
+    $ yarn add package-name
+    
+If the project already contains [Yarn](https://yarnpkg.com) dependencies, run
 
-Include the assets in your `js`/`css` files (paths relative to the root `bower_component` directory)
+    $ yarn
+
+###### css files
+
+    @import 'folder/file'
+
+###### js files
+
+    #=require 'folder/file'
+
 
 ### Architecture
 
@@ -62,7 +74,7 @@ Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` dir
 Vendor stylesheets and JavaScripts should go in each of their `/bower_components/` directories.
 
     codeless/
-    ├── bower_components/
+    ├── node_modules/
     │    └── ...
     ├── source/
     │   ├── assets/
