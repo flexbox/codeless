@@ -48,25 +48,16 @@ Then, install them
 
     $ bundle install
 
-### Yarn
+### [Yarn](https://yarnpkg.com)
 
-Find and install the packages you need…
+Install the packages you need
 
-    $ yarn search package-name
-    $ yarn add package-name
+    $ yarn add [package]
+    $ yarn upgrade [package]
     
-If the project already contains [Yarn](https://yarnpkg.com) dependencies, run
+Installing all the dependencies of project
 
     $ yarn
-
-###### css files
-
-    @import 'folder/file'
-
-###### js files
-
-    #=require 'folder/file'
-
 
 ### Architecture
 
