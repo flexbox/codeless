@@ -8,7 +8,7 @@ site:
     position: 50.629250;3.057256
     region: FR-59
   url: 'https://github.com/flexbox/codeless'
-  logo: 'https://raw.githubusercontent.com/flexbox/codeless/master/source/favicon_base.png'
+  twitter_card_img: 'https://raw.githubusercontent.com/flexbox/codeless/master/source/favicon_base.png'
   author: David Leuliette
 
 social:
