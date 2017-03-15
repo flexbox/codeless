@@ -2,7 +2,7 @@
 <br />
 
 <div align="center"><strong>Start your next Middleman project in seconds</strong></div>
-<div align="center">A highly scalable, rails ready foundation with the best DX and a focus on SEO & best practices.</div>
+<div align="center">A highly scalable, Ruby on Rails ready foundation with the best DX with a focus on SEO & best practices.</div>
 <br />
 <div align="center">
 
@@ -12,14 +12,13 @@
 </div>
 <br />
 
-###### Preprocessing
+###### Tools
 - [Slim](http://slim-lang.com) *[for html]*
 - [Sass](http://sass-lang.com) *[for css]*
-- [CoffeeScript](http://coffeescript.org) *[for js]*
-
-###### Tools
 - [Yarn](https://yarnpkg.com) *[package management]*
 - ~~[Bower](http://bower.io) *[package management]*~~
+
+###### Middleman
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
 - [Middleman Autoprefixer](https://github.com/middleman/middleman-autoprefixer) *[Automatically add vendor prefixes to CSS rules]*
 - [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
@@ -73,12 +72,11 @@ Vendor stylesheets and JavaScripts should go in each of their `/bower_components
 
 ### Browser preview
 
-    middleman server
+    $ middleman server
 
 ### Deploying to GitHub Pages
 
-    middleman build
-    middleman deploy
+    $ middleman deploy
     
 Note :
 - If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed `brew install imagemagick`
