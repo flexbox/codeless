@@ -1,8 +1,7 @@
 {
   "name": "codeless",
   "version": "1.0.0",
-  "description": "Middleman starter template with Sass, slim and CoffeeScript. Based on ruby on rails architecture.",
-  "main": "index.js",
+  "description": "Middleman starter template with yarn & webpack",
   "repository": "git@github.com:flexbox/codeless",
   "author": "flexbox <dleuliette@gmail.com>",
   "license": "MIT",

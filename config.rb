@@ -1,22 +1,18 @@
+::Sass.load_paths << File.join(root, "node_modules")
+
 require 'slim'
 
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
 activate :directory_indexes
 
-set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
+set :js_dir,     'assets/javascripts'
 
 page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
-
-# Add bower's directory to sprockets asset path
-after_configuration do
-  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-  sprockets.append_path File.join "#{root}", @bower_config["directory"]
-end
 
 # Build-specific configuration
 configure :build do
@@ -38,11 +34,11 @@ configure :build do
     }
   end
 
-  activate :minify_html, remove_input_attributes: false
-  activate :minify_css
-  activate :minify_javascript
-  activate :gzip
   activate :asset_hash
+  activate :gzip
+  activate :minify_css
+  activate :minify_html, remove_input_attributes: false
+  activate :minify_javascript
 
   activate :sitemap, hostname: data.settings.site.url
   activate :sitemap_ping do |config|
@@ -54,8 +50,8 @@ configure :build do
     sitemap: data.settings.site.url+'/sitemap.xml'
 
   # Use this for github.io gh-pages
-  # activate :relative_assets
-  # set :relative_links, true
+  set :relative_links, true
+  activate :relative_assets
 end
 
 # Push-it to the web
