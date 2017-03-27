@@ -5,11 +5,12 @@
 <div align="center">A highly scalable, Ruby on Rails ready foundation with the best DX with a focus on SEO & best practices.</div>
 <br />
 <div align="center">
-
 <a href="https://travis-ci.org/flexbox/codeless">
   <img src="https://travis-ci.org/flexbox/codeless.svg?branch=master" alt="Build Status">
 </a>
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/flexbox/codeless.svg)](https://greenkeeper.io/)
+
 </div>
 <br />
 
