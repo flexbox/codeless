@@ -1,4 +1,4 @@
-::Sass.load_paths << File.join(root, "node_modules")
+::Sass.load_paths << File.join(root, 'node_modules')
 
 require 'slim'
 
@@ -56,9 +56,9 @@ end
 
 # Push-it to the web
 activate :deploy do |deploy|
-  deploy.method       = :git
-  deploy.branch       = 'gh-pages'
-  deploy.build_before = true # always use --no-clean options
+  deploy.deploy_method = :git
+  deploy.branch        = 'gh-pages'
+  deploy.build_before  = true # always use --no-clean options
 
   committer_app = "#{Middleman::Deploy::PACKAGE} v#{Middleman::Deploy::VERSION}"
   commit_message = "Deployed using #{committer_app}"

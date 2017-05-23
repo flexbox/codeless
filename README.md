@@ -25,32 +25,22 @@
 - [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
 - [Middleman Live Reload](https://github.com/middleman/middleman-livereload) *[Reloads the page when files change]*
 
+## Start a new project
+
+1. Fork this repo
+1. Rename-it then clone it on your computer
+
+
 ## Getting Started
-
-Install Middleman
-
-    $ gem install middleman
-
-Start your project
-
-    $ cd ~/path/to/your/project
-    $ middleman init awesome-project --template=flexbox/codeless
-    
-:warning: This project is not __Middleman 4 ready__, due to nightmare dependency with `middleman-deploy`.
-    
-### Dependencies
 
 You need [Bundler](http://bundler.io/) to install gems
 
     $ gem install bundler
-
-Then, install them
-
     $ bundle install
 
 ### [Yarn](https://yarnpkg.com)
 
-Install the packages you need
+Install front-end packages you need
 
     $ yarn add [package]
     $ yarn upgrade [package]
@@ -67,16 +57,11 @@ Installing all the dependencies of project
 
     $ bundle exec middleman deploy
     
-Notes:
+_Notes:_
 
 If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed 
 
     $ brew install imagemagick
-    
-If you deploy on Github pages, don't forget to uncomment these two lines in [config.rb](config.rb):
-
-    activate :relative_assets
-    set :relative_links, true
 
 ## Author
 

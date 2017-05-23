@@ -2,15 +2,21 @@
 # the following line to use 'https'
 source 'http://rubygems.org'
 
-gem 'middleman',               '~> 3.3.12'
-gem 'middleman-autoprefixer',  '~> 2.5.0'
-gem 'middleman-deploy',        '~> 1.0.0'
-gem 'middleman-favicon-maker', '~> 3.7'
-gem 'middleman-livereload',    '~> 3.4.2'
+# Core
+gem 'middleman',               '~> 4.2.0'
+gem 'middleman-autoprefixer',  '~> 2.7.1'
+gem 'middleman-favicon-maker'
+gem 'middleman-livereload'
 gem 'middleman-minify-html',   '~> 3.4.1'
-gem 'middleman-robots',        '~> 1.1.0'
-gem 'middleman-sitemap',       '~> 0.0.13'
-gem 'middleman-sitemap-ping',  '~> 0.0.2'
+gem 'middleman-robots'
+gem 'middleman-sitemap-ping'
 
-gem 'slim',                    '~> 3.0.2'
+# -- NEEDS FIX -- not yet compatible with middleman 4.x
+# gem 'middleman-deploy',         '~> 1.0.0' # FIXME: wait for new release
+gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy', branch: 'master'
+# gem 'middleman-sitemap',        '~> 0.0.13' # FIXME: wait for this PR to be merged https://github.com/statonjr/middleman-sitemap/pull/10
+gem 'middleman-sitemap', git: 'https://github.com/matsu911/middleman-sitemap', branch: 'master'
+
+# Templating Engines
+gem 'slim',                    '~> 3.0.7'
 gem 'oga',                     '~> 2.8'
