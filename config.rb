@@ -40,14 +40,14 @@ configure :build do
   activate :minify_html, remove_input_attributes: false
   activate :minify_javascript
 
-  activate :sitemap, hostname: data.settings.site.url
+  activate :sitemap, hostname: @app.data.settings.site.url
   activate :sitemap_ping do |config|
-    config.host = "#{data.settings.site.url}"
+    config.host = "#{@app.data.settings.site.url}"
   end
 
   activate :robots,
     rules: [{:user_agent => '*', :allow => %w(/)}],
-    sitemap: data.settings.site.url+'/sitemap.xml'
+    sitemap: @app.data.settings.site.url+'/sitemap.xml'
 
   # Use this for github.io gh-pages
   set :relative_links, true

@@ -20,3 +20,6 @@ gem 'middleman-sitemap', git: 'https://github.com/matsu911/middleman-sitemap', b
 # Templating Engines
 gem 'slim',                    '~> 3.0.7'
 gem 'oga',                     '~> 2.8'
+
+# Testing Deploy
+gem 'rake'

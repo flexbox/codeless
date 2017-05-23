@@ -1,15 +1,12 @@
 task default: %w[test]
 
 task :test do
-  puts "\nBuilding project"
+  puts "\n 🔨  Building project\n"
   try "bundle exec middleman build"
 end
 
 task :deploy do
-  puts "\nCopying GitHub-specific files"
-  try "cp -rv ./github/* ./build/"
-
-  puts "\nDeploying to GitHub"
+  puts "\n 🚀  Deploying to GitHub\n"
   try "bundle exec middleman deploy"
 end
 
