@@ -59,29 +59,21 @@ Installing all the dependencies of project
 
     $ yarn
 
-### Architecture
-
-Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` directory.
-Vendor stylesheets and JavaScripts should go in each of their `/bower_components/` directories.
-
-    codeless/
-    ├── node_modules/
-    │    └── ...
-    ├── source/
-    │   ├── assets/
-    │   └── ...
-
 ### Browser preview
 
-    $ middleman server
+    $ bundle exec middleman server
 
 ### Deploying to GitHub Pages
 
-    $ middleman deploy
+    $ bundle exec middleman deploy
     
-Note :
-- If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed `brew install imagemagick`
-- If you deploy on Github pages, don't forget to uncomment these two lines in `config.rb` :
+Notes:
+
+If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed 
+
+    $ brew install imagemagick
+    
+If you deploy on Github pages, don't forget to uncomment these two lines in [config.rb](config.rb):
 
     activate :relative_assets
     set :relative_links, true
