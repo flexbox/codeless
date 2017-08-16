@@ -17,5 +17,3 @@
 # Ignore Bower Folder
 /bower_components
 /node_modules
-
-Gemfile.lock
