@@ -17,6 +17,7 @@
 - [Slim](http://slim-lang.com) *[for html]*
 - [Sass](http://sass-lang.com) *[for css]*
 - [Yarn](https://yarnpkg.com) *[package management]*
+- [Webpack](https://webpack.js.org/) *[bundle for assets]*
 
 ###### Middleman
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
