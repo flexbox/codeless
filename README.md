@@ -36,14 +36,9 @@ You need [Bundler](http://bundler.io/) to install gems
 
     $ gem install bundler
     $ bundle install
+    $ yarn
 
-### [Yarn](https://yarnpkg.com)
-
-Install front-end packages you need
-
-    $ yarn add MY_PACKAGE
-
-### Browser preview
+### Browser preview – _[http://locahost:4567](http://locahost:4567)_
 
     $ bundle exec middleman server
 
