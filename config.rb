@@ -1,5 +1,7 @@
+require 'dotenv/load'
 require 'slim'
 
+activate :my_feature,
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
 activate :directory_indexes

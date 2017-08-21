@@ -160,6 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   middleman (~> 4.2.0)
   middleman-autoprefixer (~> 2.7.1)
   middleman-deploy!
@@ -172,6 +173,7 @@ DEPENDENCIES
   oga (~> 2.8)
   rake
   slim (~> 3.0.7)
+  thor
 
 BUNDLED WITH
    1.15.3
