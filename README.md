@@ -49,13 +49,3 @@ You need [Bundler](http://bundler.io/) to install gems
 __💡 Note:__ If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed 
 
     $ brew install imagemagick
-
-## Author
-
-| [![twitter/_flexbox](https://gravatar.com/avatar/66ecc55f1bc2e5863eb516ee6f20794e?s=70)](https://twitter.com/_flexbox "Follow @_flexbox on Twitter") |
-|---|
-| [David Leuliette](http://davidl.fr/) |
-
-## License
-
-This project is free software, and may be redistributed under [GNU/GPL license](LICENSE.md).
