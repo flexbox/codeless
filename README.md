@@ -4,14 +4,8 @@
 <div align="center"><strong>Start your next Middleman 4 project in seconds with the best DX</strong></div>
 <div align="center">A highly scalable, Middleman template with a focus on SEO & best practices.</div>
 <br />
-<div align="center">
-<a href="https://travis-ci.org/flexbox/codeless">
-  <img src="https://travis-ci.org/flexbox/codeless.svg?branch=master" alt="Build Status">
-</a>
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/flexbox/codeless.svg)](https://greenkeeper.io/)
-
-</div>
 
 ###### Tools
 - [Slim](http://slim-lang.com) *[for html]*
