@@ -22,7 +22,7 @@ module MetaTagsHelper
     if current_page.data['twitter_card_img']
       path = image_path(current_page.data['twitter_card_img'])
     else
-      path = data.settings.site.logo
+      path = data.settings.site.twitter_card_img
     end
 
     path
