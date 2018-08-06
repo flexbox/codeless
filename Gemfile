@@ -2,6 +2,12 @@
 # the following line to use 'https'
 source 'http://rubygems.org'
 
+# command line interface
+gem 'thor'
+
+# environment
+gem 'dotenv'
+
 # Core
 gem 'middleman',               '~> 4.2.0'
 gem 'middleman-autoprefixer',  '~> 2.7.1'
