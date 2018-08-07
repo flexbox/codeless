@@ -1,19 +1,16 @@
 require 'slim'
 
-activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
-activate :livereload
 activate :directory_indexes
-activate :external_pipeline,
-  name: :webpack,
-  command: build? ?
-  './node_modules/webpack/bin/webpack.js --bail -p' :
-  './node_modules/webpack/bin/webpack.js --watch -d --progress --color',
-  source: 'build',
-  latency: 1
 
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? "npm run build:assets" : "npm run start:assets",
+  source: ".tmp/dist",
+  latency: 1
 
 page '/*.xml',  layout: false
 page '/*.json', layout: false

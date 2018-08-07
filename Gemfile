@@ -4,7 +4,6 @@ source 'http://rubygems.org'
 
 # Core
 gem 'middleman',               '~> 4.2.0'
-gem 'middleman-autoprefixer',  '~> 2.7.1'
 gem 'middleman-favicon-maker'
 gem 'middleman-livereload'
 gem 'middleman-minify-html',   '~> 3.4.1'
