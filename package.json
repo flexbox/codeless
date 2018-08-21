@@ -38,7 +38,7 @@
     "sass-loader": "^6.0.6",
     "sinon": "^3.2.1",
     "style-loader": "^0.18.2",
-    "webpack": "^3.5.5"
+    "webpack": "^4.17.0"
   },
   "dependencies": {
     "bootstrap": "^4.1.3"
