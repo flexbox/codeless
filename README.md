@@ -15,9 +15,7 @@
 
 ###### Middleman
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
-- [Middleman Autoprefixer](https://github.com/middleman/middleman-autoprefixer) *[Automatically add vendor prefixes to CSS rules]*
 - [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker) *[Generate favicon files in various sizes]*
-- [Middleman Live Reload](https://github.com/middleman/middleman-livereload) *[Reloads the page when files change]*
 
 ## Start a new project
 
@@ -39,7 +37,7 @@ You need [Bundler](http://bundler.io/) to install gems
 ### Deploying to GitHub Pages
 
     $ bundle exec middleman deploy
-    
-__💡 Note:__ If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed 
+
+__💡 Note:__ If you get an error with `middleman build`, make sure [Imagemagik](http://www.imagemagick.org/script/index.php) is installed
 
     $ brew install imagemagick
