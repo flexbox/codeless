@@ -1,1 +1,2 @@
-console.log('Hello');
+// Import JavaScript files
+// import './file';
