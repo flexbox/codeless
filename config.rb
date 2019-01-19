@@ -8,8 +8,8 @@ set :js_dir,     'assets/javascripts'
 
 activate :external_pipeline,
   name: :webpack,
-  command: build? ? "npm run build:assets" : "npm run start:assets",
-  source: ".tmp/dist",
+  command: build? ? 'yarn run build' : 'yarn run start',
+  source: '.tmp/dist',
   latency: 1
 
 page '/*.xml',  layout: false
@@ -31,7 +31,7 @@ configure :build do
         { icon: 'favicon-96x96.png' },
         { icon: 'favicon-32x32.png' },
         { icon: 'favicon-16x16.png' },
-        { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' },
+        { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' }
       ]
     }
   end
@@ -44,12 +44,12 @@ configure :build do
 
   activate :sitemap, hostname: @app.data.settings.site.url
   activate :sitemap_ping do |config|
-    config.host = "#{@app.data.settings.site.url}"
+    config.host = @app.data.settings.site.url.to_s
   end
 
   activate :robots,
-    rules: [{:user_agent => '*', :allow => %w(/)}],
-    sitemap: @app.data.settings.site.url+'/sitemap.xml'
+    rules: [{ user_agent: '*', allow: %w(/) }],
+    sitemap: @app.data.settings.site.url + '/sitemap.xml'
 
   # Use this for github.io gh-pages
   set :relative_links, true
